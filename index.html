@@ -23,6 +23,10 @@ html { scroll-behavior: smooth; }
     --color-accent-800: oklch(0.260 0.095 305);
     --color-accent-2: oklch(0.415 0.145 305);
   }
+  /* Section and project titles carry the plum accent. Scoped to <main> so the
+     hero name stays near-black and the contact heading, which sits on a plum
+     background, keeps its light color. */
+  main h2, main h3 { color: var(--color-accent); }
   a { color: var(--color-accent-700); text-underline-offset: 3px; text-decoration-thickness: 1px; }
   a:hover { color: var(--color-accent); }
   a:focus-visible, button:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
